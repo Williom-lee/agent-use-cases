@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Use Cases — A Directory of What AI Agents Actually Do</title>
+  <meta name="description" content="A curated directory of real-world AI agent use cases across customer support, engineering, sales, research, and more. Find tools, learn patterns, submit yours." />
+
+  <!-- Open Graph (社媒分享卡片) -->
+  <meta property="og:title" content="Agent Use Cases — A Directory of What AI Agents Actually Do" />
+  <meta property="og:description" content="Curated, real-world AI agent use cases. Search, filter, and submit." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Agent<span>UseCases</span></div>
+      <nav class="nav-links">
+        <a href="#directory">Directory</a>
+        <a href="#submit">Submit</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>What can AI agents actually do?</h1>
+    <p>A growing, curated directory of real-world AI agent use cases — with the tools behind each one. Built and updated continuously.</p>
+  </section>
+
+  <!-- 赞助展位：把 href 换成你的 Stripe Sponsorship 支付链接 -->
+  <div class="sponsor-banner" id="sponsor">
+    <div class="sponsor-card">
+      <div>
+        <div class="label">Sponsored</div>
+        <div class="txt">Put your AI product in front of builders researching agent use cases.</div>
+      </div>
+      <!-- TODO: 替换成真实 Stripe Payment Link，例如 https://buy.stripe.com/xxxx -->
+      <a class="btn-sponsor" href="https://buy.stripe.com/your-sponsorship-link" target="_blank" rel="noopener">Become a Sponsor — $100/mo</a>
+    </div>
+  </div>
+
+  <section class="controls" id="directory">
+    <input id="search" class="search" type="text" placeholder="Search use cases, tools, or tags…" />
+    <div id="chips" class="chips"></div>
+    <p class="count" id="count"></p>
+  </section>
+
+  <main id="grid" class="grid"></main>
+
+  <!-- 提交入口：把 href 换成你的 GitHub 仓库 issue 链接（预填模板） -->
+  <section class="submit" id="submit">
+    <div class="submit-box">
+      <h3 style="margin-top:0;">Built or found a great agent use case?</h3>
+      <p style="color:var(--muted);">Submit it and we'll review and add it to the directory.</p>
+      <!-- TODO: 替换 USER/REPO 为你自己的 GitHub 仓库 -->
+      <a class="btn-submit"
+         href="https://github.com/USER/REPO/issues/new?title=New%20Use%20Case:%20&body=Title:%0ACategory:%0ASummary:%0ATools:%0AURL:"
+         target="_blank" rel="noopener">Submit a Use Case</a>
+    </div>
+  </section>
+
+  <footer id="newsletter">
+    <div class="footer-inner">
+      <div class="newsletter">
+        <h4>Weekly agent use-case digest</h4>
+        <p>Get new use cases and tool breakdowns in your inbox every week. No spam.</p>
+
+        <!--
+          ============================================================
+          接入 Beehiiv 的方法（二选一）：
+          方式 A（推荐）：登录 Beehiiv → 你的 publication → Settings → Integrations，
+          复制"Embed form"代码，直接替换下面这个 <form>。
+          方式 B（简单）：保留下面的表单，但把 action 改成 Beehiiv 提供的
+          表单 POST 地址，并把 <button> 设为 type="submit"。
+          在接入前，表单只会本地提示，不会丢邮件。
+          ============================================================
+        -->
+        <form id="newsletter" class="nl-form" action="#" method="post">
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div id="nl-msg" class="nl-msg"></div>
+      </div>
+      <div class="footer-meta">
+        <p><strong>AgentUseCases</strong></p>
+        <p>A directory maintained with AI assistance. Sponsored listings keep it free.</p>
+        <p><a href="#sponsor">Advertise</a> · <a href="#submit">Submit</a> · <a href="#directory">Browse</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
