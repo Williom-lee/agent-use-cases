@@ -1,7 +1,7 @@
 // ============================================================
-// Agent Use Cases - 数据文件
-// 想新增一个用例？复制下面任意一个 {...} 块，改掉内容即可。
-// AI 智能体后续也是改这个文件并自动提交到 GitHub。
+// Agent Use Cases - Data File
+// To add a new use case: copy any {...} block and edit the fields.
+// The AI agent will also edit this file and push updates to GitHub.
 // ============================================================
 
 window.AGENT_USE_CASES = [
@@ -9,7 +9,7 @@ window.AGENT_USE_CASES = [
     id: 1,
     title: "AI Customer Support Agents",
     category: "Customer Support",
-    summary: "用大模型自动读取帮助文档、回答用户问题并直接处理工单，只在复杂情况才转人工。Intercom 的 Fin 与 Zendesk 的 AI Agent 是这一类代表产品。",
+    summary: "AI agents that read your help docs, answer customer questions, and resolve tickets end-to-end — escalating to humans only for complex cases. Intercom's Fin and Zendesk AI Agent are the leading products in this category.",
     tools: ["Intercom Fin", "Zendesk AI"],
     url: "https://www.intercom.com/fin",
     tags: ["support", "helpdesk", "automation"]
@@ -18,7 +18,7 @@ window.AGENT_USE_CASES = [
     id: 2,
     title: "Autonomous Coding Agents",
     category: "Software Engineering",
-    summary: "能读懂代码库、按自然语言指令修改文件、跑测试并提 PR 的编程智能体。GitHub Copilot 负责补全与对话，Cursor 提供 Agent 模式，Devin 主打端到端任务执行。",
+    summary: "Coding agents that understand your codebase, edit files from natural-language instructions, run tests, and open pull requests. GitHub Copilot handles completion and chat, Cursor offers an Agent mode, and Devin focuses on end-to-end task execution.",
     tools: ["GitHub Copilot", "Cursor", "Devin"],
     url: "https://github.com/features/copilot",
     tags: ["coding", "developer", "agent"]
@@ -27,7 +27,7 @@ window.AGENT_USE_CASES = [
     id: 3,
     title: "Research & Citation Agents",
     category: "Research",
-    summary: "面向开放问题的联网研究智能体，会检索网页、给出带引用的答案并整理来源。Perplexity 以答案引擎形态落地，ChatGPT 的联网模式也具备类似能力。",
+    summary: "Web-connected research agents that answer open questions by searching the web, citing sources, and organizing references. Perplexity ships this as an answer engine, and ChatGPT's browsing mode offers similar capabilities.",
     tools: ["Perplexity", "ChatGPT"],
     url: "https://www.perplexity.ai",
     tags: ["research", "search", "citations"]
@@ -36,7 +36,7 @@ window.AGENT_USE_CASES = [
     id: 4,
     title: "Sales Prospecting Agents",
     category: "Sales & Marketing",
-    summary: "自动筛选潜在客户、研究其公司背景、生成个性化触达邮件并安排外联节奏的智能体。11x.ai 的 Alice 与 Lyne.ai 是这一方向的早期产品。",
+    summary: "Agents that qualify prospects, research target companies, draft personalized outreach emails, and schedule follow-up sequences. 11x.ai's Alice and Lyne.ai were early products in this space.",
     tools: ["11x.ai", "Lyne.ai"],
     url: "https://www.11x.ai",
     tags: ["sales", "outreach", "leads"]
@@ -45,7 +45,7 @@ window.AGENT_USE_CASES = [
     id: 5,
     title: "Document & Invoice Extraction",
     category: "Document Automation",
-    summary: "从发票、合同、表单等非结构化文档中自动抽取关键字段并写入系统，替代人工录入。Nanonets 与 Docparser 提供这类抽取工作流。",
+    summary: "Agents that pull key fields from unstructured documents — invoices, contracts, forms — and write them straight into your systems, replacing manual data entry. Nanonets and Docparser provide these extraction workflows.",
     tools: ["Nanonets", "Docparser"],
     url: "https://nanonets.com",
     tags: ["documents", "ocr", "rpa"]
@@ -54,7 +54,7 @@ window.AGENT_USE_CASES = [
     id: 6,
     title: "Marketing Copy Generators",
     category: "Content & Marketing",
-    summary: "根据品牌 brief 批量生成广告文案、社媒帖子和产品描述，并可按渠道微调语气。Jasper 与 Copy.ai 是面向营销团队的生成式写作工具。",
+    summary: "Agents that generate ad copy, social posts, and product descriptions in bulk from a brand brief, tuning tone per channel. Jasper and Copy.ai are the go-to generative writing tools for marketing teams.",
     tools: ["Jasper", "Copy.ai"],
     url: "https://www.jasper.ai",
     tags: ["copywriting", "marketing", "content"]
@@ -63,7 +63,7 @@ window.AGENT_USE_CASES = [
     id: 7,
     title: "Meeting Notes & CRM Sync",
     category: "Productivity",
-    summary: "实时转录会议、提炼行动项并自动同步到 CRM 或任务工具，减少会后整理负担。Fireflies.ai 与 Otter.ai 提供会议记录与摘要能力。",
+    summary: "Agents that transcribe meetings in real time, extract action items, and sync them to your CRM or task tools — cutting post-meeting busywork. Fireflies.ai and Otter.ai lead this category.",
     tools: ["Fireflies.ai", "Otter.ai"],
     url: "https://fireflies.ai",
     tags: ["meetings", "notes", "crm"]
@@ -72,7 +72,7 @@ window.AGENT_USE_CASES = [
     id: 8,
     title: "Text-to-SQL Data Agents",
     category: "Data Analysis",
-    summary: "用自然语言直接查询数据库、生成图表与洞察，让非技术同事也能自助取数。Defog 与 SeekAI 等工具把大模型接到了企业数据源上。",
+    summary: "Agents that let anyone query databases in plain English, generating charts and insights without writing SQL. Defog, SeekAI, and similar tools connect large language models to enterprise data sources.",
     tools: ["Defog", "SeekAI"],
     url: "https://defog.ai",
     tags: ["sql", "analytics", "data"]
