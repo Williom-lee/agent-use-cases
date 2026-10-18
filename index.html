@@ -31,15 +31,22 @@
     <p>A growing, curated directory of real-world AI agent use cases — with the tools behind each one. Built and updated continuously.</p>
   </section>
 
-  <!-- 赞助展位：把 href 换成你的 Stripe Sponsorship 支付链接 -->
+ <!-- 赞助展位：PayPal 收款按钮（替代原 Stripe 占位） -->
   <div class="sponsor-banner" id="sponsor">
     <div class="sponsor-card">
       <div>
         <div class="label">Sponsored</div>
         <div class="txt">Put your AI product in front of builders researching agent use cases.</div>
       </div>
-      <!-- TODO: 替换成真实 Stripe Payment Link，例如 https://buy.stripe.com/xxxx -->
-      <a class="btn-sponsor" href="https://buy.stripe.com/your-sponsorship-link" target="_blank" rel="noopener">Become a Sponsor — $100/mo</a>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener">
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="business" value="todylee007@163.com" />
+        <input type="hidden" name="item_name" value="AgentUseCases Sponsor Slot" />
+        <input type="hidden" name="amount" value="99.00" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="return" value="https://agent-use-cases-ruddy.vercel.app/" />
+        <button type="submit" class="btn-sponsor">Become a Sponsor — $99</button>
+      </form>
     </div>
   </div>
 
