@@ -68,21 +68,8 @@
       <div class="newsletter">
         <h4>Weekly agent use-case digest</h4>
         <p>Get new use cases and tool breakdowns in your inbox every week. No spam.</p>
-
-        <!--
-          ============================================================
-          接入 Beehiiv 的方法（二选一）：
-          方式 A（推荐）：登录 Beehiiv → 你的 publication → Settings → Integrations，
-          复制"Embed form"代码，直接替换下面这个 <form>。
-          方式 B（简单）：保留下面的表单，但把 action 改成 Beehiiv 提供的
-          表单 POST 地址，并把 <button> 设为 type="submit"。
-          在接入前，表单只会本地提示，不会丢邮件。
-          ============================================================
-        -->
-        <form id="newsletter" class="nl-form" action="#" method="post">
-          <input id="email" type="email" placeholder="you@example.com" required />
-          <button type="submit">Subscribe</button>
-        </form>
+       
+       <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="6b666245-aaaf-43b4-a904-d722375ec519"></script>
         <div id="nl-msg" class="nl-msg"></div>
       </div>
       <div class="footer-meta">
